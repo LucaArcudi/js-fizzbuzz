@@ -21,14 +21,31 @@
 
 
 for(let i = 1; i < 101; i++){
+
+    let mainElement = document.querySelector("div.col-12");
+
+    
+    let divElement = document.createElement("div");
+
+
     if (i % 15 === 0){
         console.log("FIZZBUZZ");
+        divElement.innerHTML = "FIZZBUZZ";
     } else if (i % 5 === 0){
         console.log("BUZZ");
+        divElement.innerHTML = "BUZZ";
     } else if (i % 3  === 0){
         console.log("FIZZ");
+        divElement.innerHTML = "FIZZ";
     } else {
         console.log(i);
+        divElement.innerHTML = i;
     }
 
+    mainElement.append(divElement);
 }
+
+
+
+
+
